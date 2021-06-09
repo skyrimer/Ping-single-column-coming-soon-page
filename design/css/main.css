@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  color: #151f29;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 90%;
+  margin: 4em 0;
+  max-width: 35em;
+}
+
+.container .logo {
+  width: auto;
+  margin-bottom: 3em;
+}
+
+.container h1 {
+  font-size: 7vw;
+  color: #969696;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 40rem) {
+  .container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.container h1 span {
+  color: #151f29;
+  font-weight: 700;
+}
+
+.container .subheading {
+  font-size: 5vw;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 40rem) {
+  .container .subheading {
+    font-size: 1rem;
+  }
+}
+
+.container .input-wrapper {
+  margin-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2em;
+  width: 100%;
+  gap: 0.5em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .input-wrapper .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 40rem) {
+  .container .input-wrapper .input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+.container .input-wrapper .error-message {
+  margin-bottom: 1em;
+  display: none;
+  margin-top: 0.5em;
+  padding-left: 1.7em;
+  font-size: 0.9rem;
+  color: #ff5263;
+  font-style: italic;
+}
+
+@media screen and (min-width: 40em) {
+  .container .input-wrapper .error-message {
+    margin-bottom: 0;
+  }
+}
+
+.container .input-wrapper.invalid .error-message {
+  display: block;
+}
+
+.container .input-wrapper.invalid input[type="email"] {
+  border-color: #ff5263;
+}
+
+.container .input-wrapper > input,
+.container .input-wrapper > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+@media screen and (min-width: 40rem) {
+  .container .input-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 2em;
+  }
+  .container .input-wrapper > input {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+
+.container .input-wrapper input {
+  display: block;
+  padding: 0.9em 1.4em;
+  border-radius: 2.2em;
+  font-size: 1rem;
+  outline: none;
+}
+
+.container .input-wrapper input[type="email"] {
+  width: 100%;
+  border: 1px solid #c2d3ff;
+  border-radius: 2.2em;
+}
+
+.container .input-wrapper input[type="email"]::-webkit-input-placeholder {
+  color: #c2d3ff;
+  font-weight: 300;
+  font-size: 6vw;
+}
+
+.container .input-wrapper input[type="email"]:-ms-input-placeholder {
+  color: #c2d3ff;
+  font-weight: 300;
+  font-size: 6vw;
+}
+
+.container .input-wrapper input[type="email"]::-ms-input-placeholder {
+  color: #c2d3ff;
+  font-weight: 300;
+  font-size: 6vw;
+}
+
+.container .input-wrapper input[type="email"]::placeholder {
+  color: #c2d3ff;
+  font-weight: 300;
+  font-size: 6vw;
+}
+
+@media screen and (min-width: 19rem) {
+  .container .input-wrapper input[type="email"]::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .container .input-wrapper input[type="email"]:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .container .input-wrapper input[type="email"]::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .container .input-wrapper input[type="email"]::placeholder {
+    font-size: 1rem;
+  }
+}
+
+.container .input-wrapper input[type="submit"] {
+  padding: 0.9em 3em;
+  border: none;
+  color: white;
+  background-color: #4f7df3;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.container .input-wrapper input[type="submit"]:hover, .container .input-wrapper input[type="submit"]:focus {
+  background-color: rgba(79, 125, 243, 0.8);
+}
+
+.container img {
+  margin-bottom: 4em;
+  width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .container img {
+    margin-bottom: 0;
+  }
+}
+
+.container .social-media {
+  margin: 3em 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+
+.container .social-media .icon-wrapper {
+  width: 2em;
+  height: 2em;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 50%;
+  border: 1px solid #c2d3ff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .social-media .icon-wrapper i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4f7df3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .social-media .icon-wrapper:hover, .container .social-media .icon-wrapper:focus {
+  background-color: #4f7df3;
+}
+
+.container .social-media .icon-wrapper:hover i, .container .social-media .icon-wrapper:focus i {
+  color: white;
+}
+
+.container .copyright {
+  font-size: 0.9rem;
+  color: #969696;
+}
+/*# sourceMappingURL=main.css.map */
