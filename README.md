@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/skyrimer/stats-preview-card-component](https://github.com/skyrimer/stats-preview-card-component)
-- Live Site URL: [https://dreamy-kare-ccc815.netlify.app](https://dreamy-kare-ccc815.netlify.app)
+- Solution URL: [https://github.com/skyrimer/Ping-single-column-coming-soon-page](https://github.com/skyrimer/Ping-single-column-coming-soon-page)
+- Live Site URL: [https://eager-agnesi-7a2c0d.netlify.app](https://eager-agnesi-7a2c0d.netlify.app)
 
 
 ### Built with
